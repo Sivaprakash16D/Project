@@ -251,7 +251,7 @@ void Modem_install()
 //         __delay_ms(3000);
 //  memset(string,0,255);
 // RC1IF=0;
-// UART1PutString("AT+GSN\r\n",8);  // Identification IMEI to save temporary array
+// UART1PutString("AT+GSN\r\n",8);  // Identification IMEI to save temporary array///
 // while(!RC1IF);flag=0;
 // memset(IMEI,string+9,15);
 // 
@@ -404,8 +404,7 @@ void MSG_check()
                          }
                         
                      }
-                    
-                 }UART2_PutChar('\n');
+                  }UART2_PutChar('\n');
                 
            for(int b=0;b<13;b++)
                             {
